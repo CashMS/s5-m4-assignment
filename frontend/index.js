@@ -16,8 +16,6 @@ async function moduleProject4() {
 
   // 👉 Tasks 1 - 5 go here
 
-  console.log(descriptions);
-
   let link = '';
 
   const curTempDiv = document.querySelector('#apparentTemp');
@@ -63,11 +61,9 @@ async function moduleProject4() {
   dropDown.addEventListener('change', (e) => {
     const selected = e.currentTarget;
     const current = selected.value;
-    console.log(e.target.value);
 
     if (current !== lastSel) {
       widgDiv.style.display = 'none';
-      console.log('hiding');
     }
 
     selected.setAttribute('disabled', 'disabled');
@@ -79,23 +75,17 @@ async function moduleProject4() {
 
     if (e.target.value === 'San Francisco') {
       link = 'http://localhost:3003/api/weather';
-      console.log(link);
     } else if (e.target.value === 'New York') {
       link = 'http://localhost:3003/api/weather?city=New+York';
-      console.log(link);
     } else if (e.target.value === 'Detroit') {
       link = 'http://localhost:3003/api/weather?city=Detroit';
-      console.log(link);
     } else if (e.target.value === 'Honolulu') {
       link = 'http://localhost:3003/api/weather?city=Honolulu';
-      console.log(link);
     }
 
     axios.get(link)
       .then(res => {
-        console.log(res.data);
         const data = res.data;
-        console.log(data.forecast.daily[0].weather_description)
 
         info.textContent = '';
         widgDiv.style.display = 'block';
