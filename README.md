@@ -25,7 +25,8 @@ In addition to these technical skills, the following soft skills will significan
 
 You have been given a take-home coding assessment as part of the hiring process for a Web Developer position. Your task is to turn static HTML into a real application capable of displaying weather information obtained from an API, using only JavaScript.
 
-You can find a [detailed mock](https://w-s5m4-project.herokuapp.com/) showing the desired result. Check out the Network Tab in Dev Tools as you investigate!
+You can find a [detailed mock](https://w-s5m4-p
+roject.herokuapp.com/) showing the desired result. Check out the Network Tab in Dev Tools as you investigate!
 
 Make sure to read and follow the instructions below carefully. Good luck!
 
